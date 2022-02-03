@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GasEnergy</title>
+    <style>
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="block1 row">
+        <h2 class="block_title">Карта заправок</h2>
+        <div id="map" class="block1_map"></div>
+    </div>
+    <div class="block2 row">
+        <h3 class="block2_title">Проспект Салавата Юлаева</h3>
+        <div class="address">
+        <div class="div1" data-longitude="54.72126520490075" data-latitude="55.98319675297372">
+            <div class="box b1">
+                <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                <p class="box_tel">+7 800 555 35 35</p>
+            </div>
+        </div>
+        <div class="div2" data-longitude="54.73283501809734" data-latitude="55.99281858314659">
+            <div class="box b2">
+                <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                <p class="box_tel">+7 800 555 35 35</p>
+            </div>
+        </div>
+        <div class="div3" data-longitude="54.73814054859857" data-latitude="55.992049806233275">
+            <div class="box b3">
+                <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                <p class="box_tel">+7 800 555 35 35</p>
+            </div>
+        </div>
+        <div class="div4" data-longitude="54.743555874686905" data-latitude="55.98695862718112">
+            <div class="box b4">
+                <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                <p class="box_tel">+7 800 555 35 35</p>
+            </div>
+        </div>
+        </div>
+        <div class="address" id="top">
+            <div class="div5" data-longitude="54.74241377257123" data-latitude="55.981165055709">
+                <div class="box b5">
+                    <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                    <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                    <p class="box_tel">+7 800 555 35 35</p>
+                </div>
+            </div>
+            <div class="div6" data-longitude="54.73806852323486" data-latitude="55.979791764693374">
+                <div class="box b6">
+                    <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                    <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                    <p class="box_tel">+7 800 555 35 35</p>
+                </div>
+            </div>
+            <div class="div7" data-longitude="54.748757370574566" data-latitude="55.9826733263107">
+                <div class="box b7">
+                    <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                    <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                    <p class="box_tel">+7 800 555 35 35</p>
+                </div>
+            </div>
+            <div class="div8" data-longitude="54.74932833583489" data-latitude="55.99044146914715">
+                <div class="box b8">
+                    <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                    <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                    <p class="box_tel">+7 800 555 35 35</p>
+                </div>
+           </div>
+        </div>
+    <div class="block2">
+        <h3 class="block2_title">Проспект Салавата Юлаева</h3>
+        <div class="address">
+            <div class="div9" data-longitude="54.74942763331554" data-latitude="56.00559058566326">
+                <div class="box b9">
+                    <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                    <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                    <p class="box_tel">+7 800 555 35 35</p>
+                </div>
+            </div>
+            <div class="div10" data-longitude="54.738230301429184" data-latitude="56.02301421542399">
+                <div class="box b10">
+                    <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                    <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                    <p class="box_tel">+7 800 555 35 35</p>
+                </div>
+            </div>
+            <div class="div11" data-longitude="54.71937899041183" data-latitude="55.94889941592447">
+                <div class="box b11">
+                    <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                    <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                    <p class="box_tel">+7 800 555 35 35</p>
+                </div>
+            </div>
+            <div class="div12" data-longitude="54.74319624252918" data-latitude="55.957353738739414">
+                <div class="box b12">
+                    <p class="box_name">АЗГС: ЗАО “Северное”</p>
+                    <p class="box_address">Проспект Салавата Юлаева, 31</p>
+                    <p class="box_tel">+7 800 555 35 35</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="block3 row">
+        <div class="block3_top">
+        <h2 class="block_title">Акции</h2>
+        <a class="block3_link" href="#" onClick="return false;">Смотреть все</a>
+        </div>
+        <div class="block3_bottom">
+            <div class="page">
+                <a class="page_link" href="#" onClick="return false;">
+                    <p class="page_date">10.03.21</p>
+                    <img class="block3_img" src="img/img1.jpg" alt="Установка ГБО Пропан">
+                    <p class="page_title">Установка ГБО Пропан</p>
+                    <p class="page_text">Установочный центр «GAS-ENERGY» предлагает перевод автомобиля на дополнительную систему питания: сжиженный газ-пропан или природный газ-метан, в целях экономии средств на топливе и увеличении срока службы двигателя. ГБО устанавливается на автомобиль дополнительно к бензиновой...</p>
+                    <div class="page_arrow">Смотреть </div>
+                </a>
+            </div>
+            <div class="page">
+                <a class="page_link" href="#" onClick="return false;">
+                    <p class="page_date">10.03.21</p>
+                    <img class="block3_img" src="img/img2.jpg" alt="Установка ГБО Пропан">
+                    <p class="page_title">Установка ГБО Пропан</p>
+                    <p class="page_text">Установочный центр «GAS-ENERGY» предлагает перевод автомобиля на дополнительную систему питания: сжиженный газ-пропан или природный газ-метан, в целях экономии средств на топливе и увеличении срока службы двигателя. ГБО устанавливается на автомобиль дополнительно к бензиновой...</p>
+                    <div class="page_arrow">Смотреть </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=08eacae6-09b7-4521-b036-611ff4a378c4&lang=ru_RU"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
